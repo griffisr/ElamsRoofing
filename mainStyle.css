@@ -439,7 +439,18 @@ body {
 
 
 
-
+.wrapper1 {
+  position: relative;
+  flex-grow: 1;
+  margin-left: 20%;
+  max-width: 1200px;
+  max-height: 1200px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 2vmin;
+  justify-items: center;
+  align-items: center;
+}
 
 
 .wrapper {

@@ -288,7 +288,9 @@ body {
 }
 
 /* ........./ Locations /.......... */
-
+#other-services{
+  flex-direction: row;
+}
 #food h2{
     text-align: center;
     font-size: 3.4rem;

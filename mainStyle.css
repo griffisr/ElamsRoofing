@@ -23,7 +23,7 @@ body {
 /* ///////////..utility classes../////////// */
 
 .container {
-  max-width: 1200px;
+  max-width: 1800px;
   width: 90%;
   margin: auto;
 }
@@ -103,7 +103,7 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-.nav-peppers-logo {
+.nav-elams-roofing-logo {
   order: 1;
   height: 4vh;
   display:flex;
@@ -139,7 +139,7 @@ body {
   
 
   
-  .peppers-logo{
+  .elams-roofing-logo{
       padding-top: 6vh;
       width: 40vw;
       opacity: .8;
@@ -165,7 +165,7 @@ body {
   
   .about-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   
   #about h2 {
@@ -204,6 +204,12 @@ body {
     animation: about-img-animation 1s ease-in-out forwards;
     border-radius: 50%;
   }
+  .about-img-mobile img{
+    width: 80vw;
+    padding: 5px;
+    border-radius: 30%;
+
+  }
 
   @keyframes about-img-animation {
     100% {
@@ -212,7 +218,7 @@ body {
   }
   
   .about-text {
-    flex: 1 1 400px;
+    flex: 1 1 200px;
     padding: 30px;
     margin: auto;
     transform: translate(-150%);
@@ -423,10 +429,49 @@ body {
 
 
 
+.footer-content {
+  display: table;
+  width: 100%;
+}
 
+.footer-section {
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 20px;
+  width: 25%; /* Each section takes half of the footer */
+}
 
+.cities-section {
+  width: 50%; /* Cities section takes the entire right half */
+}
 
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px; /* Smaller font size for the links */
+}
+.footer-section ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px; /* Smaller font size for the links */
+}
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
 
 
 
@@ -446,14 +491,19 @@ body {
     margin: 0 5% 0 5%;
   }
   .demo-img {
-    padding: 30px;
-    transform: translateX(150%);
-    animation: about-img-animation 1s ease-in-out forwards;
+    padding: 3vw;
   }
 .swiper-wrapper{
     width: 40vw!important;
 }
 
+#roof{
+  padding-top: 0;
+}
+.roof-img{
+  width: 50vw; margin-bottom: -0%;
+
+}
 
 
 .wrapper1 {
@@ -504,11 +554,28 @@ body {
     opacity: 1;
   }
 
+.fblogo{
+  margin-left: 15px;
+  height: 15vh;
+}
+.fb-link h3{
+  font-size: 4rem;
+}
+#newcontact{
+  width: 100%;
+  margin: 0;
+  max-width: 100vw;
+}
 
 
-
-
-
+  @media only screen and (min-width: 768px) {
+    .about-mobile{
+      display: none;
+    }
+    .showcase-area{
+      height: 50vw;;
+    }
+  }
 
 /* ......../ media query /.......... */
 
@@ -601,7 +668,7 @@ body {
       right: 15px;
       font-size: 2rem;
     }
-    .nav-peppers-logo{
+    .nav-elams-roofing-logo{
       margin-bottom: 0px!important;
     }
   
@@ -621,7 +688,7 @@ body {
       transform: rotate(-35deg);
     }
   
-    .peppers-logo{
+    .elams-roofing-logo{
       width: 30vw!important;
     }
   
@@ -642,10 +709,14 @@ body {
     }
     .about-text{
       padding-bottom: 0px;
+      padding-top: 1vh;
     }
-    #about p{
+    p{
       font-size: 1.4rem;
+    }
 
+    .about-web{
+      display: none;
     }
 
     .swiper-nav-btn{
@@ -720,7 +791,7 @@ body {
       font-size: 3rem;
     }
   
-    .peppers-logo{
+    .elams-roofing-logo{
       width: 40vw!important;
     }
   
@@ -756,7 +827,7 @@ body {
       .navbar{
           height: 7vh!important;
       }
-      .nav-peppers-logo{
+      .nav-elams-roofing-logo{
           height: 5vh!important;
       }
   
@@ -772,7 +843,7 @@ body {
           height: 10vh!important;
       }
   
-      .nav-peppers-logo{
+      .nav-elams-roofing-logo{
           height: 6vh!important;
       }
   

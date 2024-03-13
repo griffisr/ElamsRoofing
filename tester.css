@@ -1,0 +1,381 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+body{
+    margin: 0;
+}
+  
+  p {
+    line-height: 1.6;
+    max-width: 50em;
+  }
+  
+/*Header*/
+
+.header {
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right bottom, 
+   rgba(230, 230, 230, 0.8),
+   rgba(168, 168, 168, 0.8)),
+   url('https://s3.amazonaws.com/rileyg.me/cover-photo-roof.jpeg');
+    
+  background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+
+.brand { font-size: 20px; }
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.elams-roofing-logo{
+    max-width: 70vw;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+/*Main Sections*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.content{
+    width: 98vw;
+}
+
+
+
+
+
+
+/*Roof Section*/
+#roof{
+    padding-top: 0;
+  }
+  .roof-img{
+    width: 50vw; margin-bottom: -0%;
+  
+  }
+#roof img {
+    vertical-align: middle;
+}
+  
+  .wrapper1 {
+    position: relative;
+    flex-grow: 1;
+    margin-left: 20%;
+    max-width: 1200px;
+    max-height: 1200px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 2vmin;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  
+  .wrapper {
+      position: relative;
+      flex-grow: 1;
+      margin: auto;
+      max-width: 1200px;
+      max-height: 1200px;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-gap: 2vmin;
+      justify-items: center;
+      align-items: center;
+    }
+    
+     .galleryImg {
+      opacity: .8;
+      z-index: 1;
+      grid-column: span 2;
+      max-width: 100%;
+      margin-bottom: -52%;
+      -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      transform: scale(1);
+      transition: all 0.25s;
+    }
+    .galleryImg:nth-child(7n+1) {
+      grid-column: 2/span 2;
+    }
+    .galleryImg:hover {
+      z-index: 2;
+      transform: scale(2);
+      opacity: 1;
+    }
+
+
+
+
+
+/*Contact Section*/
+#newcontact{
+background-color: #EDEDED;
+}
+#newcontact h5{
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 2vh;
+}
+.contact-wrapper{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #EDEDED;
+    
+}
+label{
+    font-size: 125%;
+}
+input {
+    border: 0;
+    border-radius: 2px;
+    padding: 1.5rem;
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+textarea{
+    border: 0;
+    border-radius: 2px;
+    padding: 1.5rem;
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+.quote-btn{
+    background-color: #f0f0f0; /* Light Gray */
+    border: 1px solid #ccc; /* Gray */
+    color: #333; /* Dark Gray */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+     text-decoration: none; /* Remove default link underline */
+     width: auto;
+
+}
+/* Hover effect */
+.quote-btn:hover {
+    background-color: #e0e0e0; /* Slightly darker shade of gray */
+  }
+  
+  /* Active state */
+  .quote-btn:active {
+    background-color: #d0d0d0; /* Slightly darker shade of gray */
+  }
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+    .contact-wrapper{
+        flex-direction: column;
+        width: 90%;
+        margin-left: 3%;
+
+    }
+    .contact-details{
+        width: 100%;
+    }
+    input{
+        max-width: 90%;
+    }
+    textarea{
+        max-width: 90%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*Footer*/
+
+  .section-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to left bottom, 
+    rgba(160, 160, 160, 0.8),
+    rgba(92, 92, 92, 0.8) );
+    color: #ddd;
+
+  }
+
+  .footer-content{
+    margin: 1vw 1vw;;
+  }
+  .footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer-column{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+  }
+  .column-content{
+    width: 30%;
+  }
+  .column-content ul{
+    margin-block-start: .2em;
+    padding-inline-start: 3.5vw;
+  }
+
+  .section-footer a{
+    text-decoration: none;
+    color: #ddd;
+    
+  }
+
+  .section-footer a:hover, a:active {
+    background-color: rgba(160, 160, 160, 0.8);
+    color: white;
+  }
+
+  .footer-content h4{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-decoration: underline;
+  }
+
+  .pp-social-icon{
+    content: "\f09a";
+
+  }
+
+  @media screen and (max-width: 640px) {
+
+    .footer-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .section-footer{
+        font-size: 20px;
+    }
+    .section-footer h4{
+        font-size: 24px;
+    }
+    .footer-wrapper{
+        width: 30%;
+        flex-direction: column;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .column-content{
+        width: 60%;
+      }
+    .footer-social{
+        margin-bottom: 1em;
+    }
+    .tel{
+        font-size: 150%;
+    }
+
+
+    .footer-cities-wrapper{
+        padding-left: 1em;
+    }
+    .cities-list{
+        font-size: 18px;
+
+    }
+
+  }
+  

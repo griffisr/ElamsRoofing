@@ -49,7 +49,7 @@ a {
   h2 { font-size: 2.5rem; }
   h3 { font-size: 2.2rem; }
   a { font-size: 1.5rem; }
-  p, li { font-size: 1.9rem; }
+  p, li { font-size: 1.9rem; max-width: 100vw;}
   cite { font-size: 1.7rem; }
   
   li, cite { font-weight: 500; }

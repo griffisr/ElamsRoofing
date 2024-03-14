@@ -1,6 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
+:root {
+  /* Color */
+  --lightest: #fffdf7;
+  --brown: #a88c7b;
+  --brown-darker: #9a7c6a;
+
+  /* Width */
+  --lg: 80rem;
+  --md: 50rem;
+  --sm: 30rem;
+}
+
+
+h1, h2, h3, h4, h5{
+  text-transform: uppercase;
+}
 body{
     margin: 0;
 }
@@ -10,7 +26,7 @@ body{
     max-width: 50em;
   }
   
-/*Header*/
+/**********************Header**********************/
 
 .header {
     height: 70vh;
@@ -119,7 +135,7 @@ body{
 
 
 
-/*Main Sections*/
+/**********************Main Sections***********************/
 .container{
     display: flex;
     flex-direction: column;
@@ -131,11 +147,184 @@ body{
 }
 
 
+/*
+  Section
+*/
+
+.section {
+  padding: 3rem 0;
+  overflow-x: hidden;
+}
 
 
 
+.section--article {
+  padding-bottom: 0;
+}
 
-/*Roof Section*/
+
+/*
+  Wrapper
+*/
+
+.article-wrapper {
+  max-width: var(--lg);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+
+/*
+  Title
+*/
+
+.title {
+  text-align: center;
+}
+
+.title--article {
+  margin-bottom: 0;
+  position: relative;
+  font-size: 3rem;
+}
+
+.title--article:after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 1px;
+  margin: .5rem auto 0;
+}
+
+.title--intro {
+  margin-bottom: 4rem;
+}
+
+/*
+  Article
+*/
+
+.excerpt {
+  row-gap: 1.5rem;
+  grid-template-columns: 1.5rem 1fr 1.5rem;
+  grid-template-areas:
+  "image image image"
+  ". text .";
+  display: grid;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.excerpt--reverse {
+  justify-items: center;
+  grid-template-areas:
+  ". image ."
+  ". text .";
+}
+
+@media (max-width: 49.999rem){
+  .section{
+    padding: 1rem 0;
+  }
+  .title--article {
+    margin: .5rem 0 0 0;
+  }
+}
+
+@media (min-width: 50rem) {
+  .excerpt {
+    grid-template-columns: 3rem 1fr calc(2rem + 5%) 1fr 3rem;
+    grid-template-areas:
+    "image image . text .";
+  }
+
+  .excerpt--reverse {
+    justify-items: stretch;
+    grid-template-areas:
+    ". text . image image";
+  }
+}
+
+.excerpt__image-wrapper {
+  overflow-x: hidden;
+  grid-area: image;
+  justify-self: center;
+  display: flex;
+}
+
+.excerpt__text-wrapper {
+  grid-area: text;
+  justify-self: center;
+}
+
+@media (min-width: 50rem) {
+  .excerpt__text-wrapper {
+    justify-self: flex-start;
+  }
+
+  .excerpt--reverse .excerpt__text-wrapper {
+    justify-self: flex-end;
+  }
+
+  .excerpt__image-wrapper {
+    justify-self: flex-end;
+  }
+
+  .excerpt--reverse .excerpt__image-wrapper {
+    display: flex;
+  }
+}
+
+/**********************Services Section**********************/
+#services{
+  background-color: #EDEDEDED;
+
+}
+.services-wrapper{
+  width: inherit;
+  height: inherit;
+  margin: 0 1vw 3vh 1vw;
+}
+.section-subheading{
+  margin: 0 0 1rem 0;
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 90%;
+}
+.content-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.services-display{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.services-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1vw;
+}
+.services-col p{
+  text-align: center;
+}
+
+@media screen and (max-width: 640px)
+{
+  .services-display{
+    flex-direction: column;
+  }
+
+}
+
+/**********************Roof Section**********************/
 #roof{
     padding-top: 0;
   }
@@ -199,9 +388,9 @@ body{
 
 
 
-/*Contact Section*/
+/**********************Contact Section**********************/
 #newcontact{
-background-color: #EDEDED;
+background-color: #EDEDEDED;
 }
 #newcontact h5{
     text-align: center;
@@ -213,21 +402,23 @@ background-color: #EDEDED;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: #EDEDED;
+    background-color: inherit;
     
 }
 label{
     font-size: 125%;
 }
 input {
-    border: 0;
+    border-width: 1px;
+    border-color: #333;
     border-radius: 2px;
     padding: 1.5rem;
     width: 100%;
     margin: 5px 0 5px 0;
 }
 textarea{
-    border: 0;
+    border-width: 1px;
+    border-color: #333;
     border-radius: 2px;
     padding: 1.5rem;
     width: 100%;
@@ -282,19 +473,7 @@ textarea{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-  /*Footer*/
+  /**********************Footer**********************/
 
   .section-footer{
     display: flex;

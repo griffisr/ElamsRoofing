@@ -3,7 +3,19 @@
     height: auto;
 }
 
+/*
+  Logo
+*/
 
+.logo {
+    font-size: 2rem;
+    justify-self: end;
+    grid-area: logo;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  
 
 ::-moz-selection {
     background: #366284;
@@ -186,7 +198,7 @@ nav .fa {
         left: 0;
         background: white;
         width: 100%;
-        height: 85vh;
+        height: 90vh;
         text-align: center;
         -webkit-transition: 0.5s;
         transition: 0.5s;
@@ -206,7 +218,6 @@ nav .fa {
         top: 10vh;
         -webkit-transition: 0.5s;
         transition: 0.5s;
-        padding-bottom: 10vh;
     }
     
     nav .fa {

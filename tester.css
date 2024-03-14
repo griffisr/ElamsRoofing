@@ -13,18 +13,18 @@ body{
 /*Header*/
 
 .header {
-    height: 100vh;
+    height: 70vh;
     background-image: 
     linear-gradient(to right bottom, 
    rgba(230, 230, 230, 0.7),
    rgba(168, 168, 168, 0.7)),
    url('https://s3.amazonaws.com/rileyg.me/cover-photo-roof.jpeg');
     
-  background-size: cover;
+    background-size: cover;
     background-position: top;
     position: relative;
 
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
 }
 
 
@@ -32,15 +32,18 @@ body{
 
 .text-box {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
 .heading-primary {
-    color: #fff;
+    background-color: rgba(168, 168, 168, 0.3);
+    border-radius: 20%;
+    color: #353434;
     text-transform: uppercase;
+    
 
     backface-visibility: hidden;
     margin-bottom: 30px;
@@ -91,6 +94,25 @@ body{
   font-size: 14px;
 }
 
+
+
+@media (min-width: 1200px){
+
+
+.text-box {
+  top: 55%;
+}
+
+}
+
+
+@media (min-width: 1400px){
+  .header{
+    height: 120vh;
+
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+}
 
 
 

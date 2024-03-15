@@ -172,10 +172,10 @@ nav .fa {
     
     nav .menu-appear {
         position: absolute;
-        top: 5vh;
+        top: 1vh;
         -webkit-transition: 0.5s;
         transition: 0.5s;
-        padding-bottom: 5vh;
+        padding-bottom: 9vh;
     }
     
     nav .fa {
@@ -216,9 +216,10 @@ nav .fa {
     
     nav .menu-appear {
         position: absolute;
-        top: 10vh;
+        top: 6vh;
         -webkit-transition: 0.5s;
         transition: 0.5s;
+        padding-bottom: 4vh;
     }
     
     nav .fa {

@@ -53,7 +53,7 @@
 
 
     e.preventDefault();
-    var URL = "https://hm6ocm81c6.execute-api.us-east-2.amazonaws.com/default/sendWebsiteEmail";
+    var URL = "https://2oqdeq6yuf.execute-api.us-east-2.amazonaws.com/production/";
 
 
     var name = document.getElementById("name-input").value;
@@ -88,7 +88,7 @@
 
 
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "https://vpppichqf5.execute-api.us-east-2.amazonaws.com/prod/email");
+    xmlhttp.open("POST", "https://2oqdeq6yuf.execute-api.us-east-2.amazonaws.com/production/");
     xmlhttp.setRequestHeader("Content-Type", "application/json");
 
     xmlhttp.send(JSON.stringify(data));
@@ -97,6 +97,7 @@
         var response = JSON.parse(xmlhttp.responseText);
         if (xmlhttp.status === 200) {
           console.log('successful');
+          alert("Thank you! Someone from our team will be in touch soon!");
           
         } else {
           console.log('failed');

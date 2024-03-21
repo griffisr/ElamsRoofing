@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tester.css">
+      <!--Initialize jquery-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <svg style="display:none;">
+        <symbol id="one" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="white" d="M0,96L1440,320L1440,320L0,320Z"></path>
+        </symbol>
+        <symbol id="two" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="white" d="M0,32L48,37.3C96,43,192,53,288,90.7C384,128,480,192,576,197.3C672,203,768,149,864,138.7C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </symbol>
+        <symbol id="three" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="white" d="M0,128L30,144C60,160,120,192,180,197.3C240,203,300,181,360,192C420,203,480,245,540,245.3C600,245,660,203,720,192C780,181,840,203,900,181.3C960,160,1020,96,1080,80C1140,64,1200,96,1260,122.7C1320,149,1380,171,1410,181.3L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+        </symbol>
+        <symbol id="four" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="white" d="M0,192L120,192C240,192,480,192,720,165.3C960,139,1200,85,1320,58.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+        </symbol>
+        <symbol id="five" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="white" d="M0,32L120,69.3C240,107,480,181,720,192C960,203,1200,149,1320,122.7L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+        </symbol>
+        <symbol id="six" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="rgba(255, 255, 255, .8)" d="M0,32L120,64C240,96,480,160,720,160C960,160,1200,96,1320,64L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+        </symbol>
+      </svg>
+      <section class="hero-section position-relative">
+        <video src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down-by-the-river_compressed.mp4" autoplay loop muted playsinline></video>
+        <div class="overlay position-absolute d-flex align-items-center justify-content-center font-weight-bold text-white h2 mb-0">
+          <blockquote class="p-4 mb-0">
+            <p>By discovering nature, you discover yourself. </p>
+            <footer class="blockquote-footer text-white text-right">Maxime Lagacé</footer>
+          </blockquote>
+        </div>
+        <svg class="position-absolute w-100">
+          <use xlink:href="#one"></use>
+        </svg>
+      </section>
+      <section class="photos-section py-5 d-flex justify-content-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-xl-3 d-flex card-outer">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature11.jpg" class="card-img-top" alt="">
+                  <svg class="position-absolute w-100">
+                    <use xlink:href="#two"></use>
+                  </svg>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">silhoutte of mountains during sunset</h5>
+                  <p class="card-text">Photo by <a href="https://unsplash.com/@von_co" target="_blank">Ivana Cajina</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3 d-flex card-outer">
+              <div class="card">
+                <div class="position-relative">
+                  <svg class="position-absolute w-100">
+                    <use xlink:href="#three"></use>
+                  </svg>
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature2.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">landscape photography of brown mountain</h5>
+                  <p class="card-text">Photo by <a href="https://unsplash.com/@wilstewart3" target="_blank">Wil Stewart</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3 d-flex card-outer">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature4.jpg" class="card-img-top" alt="">
+                  <svg class="position-absolute w-100">
+                    <use xlink:href="#four"></use>
+                  </svg>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">aerial island and beaches</h5>
+                  <p class="card-text">Photo by <a href="https://unsplash.com/@amandabereckonedwith" target="_blank">Amanda Phung</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-3 d-flex card-outer">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature6.jpg" class="card-img-top" alt="">
+                  <svg class="position-absolute w-100">
+                    <use xlink:href="#five"></use>
+                  </svg>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">photo of two black, white, and orange koi fish</h5>
+                  <p class="card-text">Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 text-center">
+              <a href="https://codepen.io/tutsplus/full/KLXpdm" class="btn btn-outline-success" role="button" target="_blank">See More Photos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cover-section position-relative">
+        <div class="cover" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/nature-pexels.jpg);">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/nature-pexels.jpg" class="img-fluid invisible" alt="" />
+        </div>
+        <div class="caption position-absolute h4 mb-0">
+          Image from <a href="https://www.pexels.com/el-gr/@sarimphotos" target="_blank">Mohamed Sarim</a>
+        </div>
+        <svg class="position-absolute w-100">
+          <use xlink:href="#six"></use>
+        </svg>
+      </section>
+      <footer class="position-relative page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/content/reboot/" target="_blank">Reboot</a>
+                </li>
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/content/typography/" target="_blank">Typography</a>
+                </li>
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/content/code/" target="_blank">Code</a>
+                </li>
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/content/images/" target="_blank">Images</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/components/alerts/" target="_blank">Alerts</a>
+                </li>
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/components/badge/" target="_blank">Badge</a>
+                </li>
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/components/breadcrumb/" target="_blank">Breadcrumb</a>
+                </li>
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/components/buttons/" target="_blank">Buttons</a>
+                </li>
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/components/button-group/" target="_blank">Button Group</a>
+                </li>
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/components/card/" target="_blank">Card</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/components/carousel/" target="_blank">Carousel</a>
+                </li>
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/components/collapse/" target="_blank">Collapse</a>
+                </li>
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/components/dropdowns/" target="_blank">Dropdowns</a>
+                </li>
+                <li>
+                  <a href="https://getbootstrap.com/docs/4.5/components/forms/" target="_blank">Forms</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p>Demo built with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, an open source toolkit for developing with HTML, CSS, and JS.</p>
+            </div>
+          </div>
+          <div class="credits mt-4 text-center">
+            <div class="credits-inner">
+              <p class="mb-0">
+                <small>Images from <a href="https://unsplash.com/" target="_blank">Unsplash.com</a> & <a href="https://www.pexels.com/" target="_blank">Pexels.com</a> | SVG icons from <a href="https://getwaves.io/" target="_blank">getwaves.io</a> | Video from <a href="https://coverr.co/" target="_blank">Coverr.co </a>
+                </small>
+              </p>
+              <p class="mb-0">
+                <small>
+                  Made with <span>❤</span> by <a href="http://georgemartsoukos.com/" target="_blank">George Martsoukos</a>
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="mainScript.js"></script>
+</body>
+</html>

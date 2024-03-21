@@ -1,6 +1,176 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
+
+
+
+
+/* RESET RULES & HELPER CLASSES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  
+  .cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--overlay);
+  }
+  
+  .btn-outline-success {
+    color: var(--green);
+  }
+  
+  .btn-outline-success:hover,
+  .btn-outline-success:not(:disabled):not(.disabled):active {
+    background: var(--green);
+  }
+  
+  .btn-outline-success,
+  .btn-outline-success:hover,
+  .btn-outline-success:not(:disabled):not(.disabled):active {
+    border-color: var(--green);
+  }
+  
+  
+  /* FIRST SECTION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .hero-section {
+    height: 100vh;
+  }
+  
+  .hero-section video {
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-section svg {
+    bottom: 0;
+    left: 0;
+    height: 30vh;
+  }
+  
+  
+  /* SECOND SECTION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .photos-section .card-outer {
+    margin-bottom: 30px;
+  }
+  
+  .photos-section .card {
+    border: none;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .photos-section .card svg {
+    bottom: 0;
+    left: 0;
+    height: 55px;
+  }
+  
+  
+  /* THIRD SECTION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .cover-section .cover {
+    background-attachment: fixed;
+  }
+  
+  .cover-section .caption {
+    bottom: 30px;
+    left: 15px;
+    z-index: 1;
+  }
+  
+  .cover-section svg {
+    bottom: 0;
+    left: 0;
+    height: 30vh;
+  }
+  
+  
+
+  
+  /* MQ
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  @media screen and (min-width: 768px) {
+    .cover-section .caption {
+      bottom: 50px;
+    }
+    
+    .cover-section svg {
+      height: 50vh;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .photos-section .card-outer {
+      margin-bottom: 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 :root {
   /* Color */
   --lightest: #fffdf7;
@@ -11,6 +181,13 @@
   --lg: 80rem;
   --md: 50rem;
   --sm: 30rem;
+
+
+
+  --overlay: rgba(0, 0, 0, 0.35);
+  --box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.15);
+  --green: #528119;
+  --red: #e74c3c;
 }
 
 
@@ -447,32 +624,14 @@ textarea{
   }
 
 
-  .form-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  
 
 
-  @media screen and (min-width: 770px){
-    #services-selector{
-      width: 110%;
-    }
-    .selectdiv{
-      width: 110%;
-    }
 
 
-  }
 
 
-@media screen and (max-width: 769px) {
-   .form-wrapper{
-    width: 100%;
-   }
-  .contact-wrapper{
+@media screen and (max-width: 900px) {
+    .contact-wrapper{
         flex-direction: column;
         width: 90%;
 
@@ -491,25 +650,12 @@ textarea{
     .contact h3{
       font-size: 150%;
     }
-    #email-input{
+    input{
         max-width: 85%;
     }
-    #citySTATE{
-      max-width: 85%;
-  }
-    #name-input{
-      max-width: 85%;
-  }
     textarea{
         max-width: 85%;
     }
-    #services-selector{
-      width: 90%;
-    }
-    .selectdiv{
-      width: 90%;
-    }
-
 
 }
 

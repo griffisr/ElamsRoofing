@@ -35,10 +35,80 @@
 
   <link rel="stylesheet" href="mainStyle.css">
   <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="contactFrom.css">
 
 
-  
+<style>
+  html {
+  scroll-behavior: smooth;
+}
+</style>
 </head>
+
+<script>
+  function submitToAPI(e) {
+
+
+
+
+
+    e.preventDefault();
+    var URL = "https://hm6ocm81c6.execute-api.us-east-2.amazonaws.com/default/sendWebsiteEmail";
+
+
+    var name = document.getElementById("name-input").value;
+    var contact = document.getElementById("email-input").value;
+    var services = JSON.stringify(localStorage.getItem("services"));
+    var location = document.getElementById("citySTATE").value;
+
+
+    var foundUs = document.getElementById("foundUs-response").value
+
+
+    var message = document.getElementById("message-input").value;
+
+
+    var data = {
+      name: name,
+      contact: contact,
+      services: services,
+      location: location,
+      foundUs: foundUs,
+      message: message
+    };
+
+    if (name == "" || contact == "" || services == "" || location == "" || foundUs == "") {
+      console.log(data)
+      alert("Please Fill All Required Field");
+      return false;
+    }
+
+
+
+
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("POST", "https://vpppichqf5.execute-api.us-east-2.amazonaws.com/prod/email");
+    xmlhttp.setRequestHeader("Content-Type", "application/json");
+
+    xmlhttp.send(JSON.stringify(data));
+    xmlhttp.onreadystatechange = function () {
+      if (xmlhttp.readyState === 4) {
+        var response = JSON.parse(xmlhttp.responseText);
+        if (xmlhttp.status === 200) {
+          console.log('successful');
+          
+        } else {
+          console.log('failed');
+        }
+      }
+    }
+
+    document.getElementById('contact-form').reset();
+
+
+  }
+</script>
 <body>
 
 
@@ -56,23 +126,23 @@
         <div class="text-menu">
   
           <div>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </div>
   
           <span class="slash">/</span>
   
           <div>
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </div>
   
           <span class="slash">/</span>
   
-          <div><a href="#">Services</a></div>
+          <div><a href="#services">Services</a></div>
   
           <span class="slash">/</span>
   
           <div>
-            <a href="#">Contact Us</a>
+            <a href="#newcontact">Contact Us</a>
           </div>
   
         </div>
@@ -88,7 +158,7 @@
 
 
 <!-- Header section -->
-    <header class="header">
+    <header class="header" id="home">
         
         <div class="text-box">
             <img src="images/Logo/Logo-no-text.png" alt="Elams Roofing" class="elams-roofing-logo">
@@ -96,7 +166,7 @@
                 <span class="heading-primary-main">Elevate your roofing experience</span>
                <!--<span class="heading-primary-sub">The secondary heading</span> -->
             </h1>
-            <a href="#" class="btn btn-white btn-animated">Get a free Quote</a>
+            <a href="#newcontact" class="btn btn-white btn-animated">Get a free Quote</a>
         </div>
     </header>
  
@@ -108,7 +178,7 @@
 
   <!-- Article section -->
 
-  <section class="section section--article">
+  <section class="section section--article" id="about">
     <article>
       <div class="article-wrapper">
         <h2 class="title title--article">Expertise Meets Excellence with Elam's Roofing LLC</h2>
@@ -240,49 +310,87 @@
 
 
               <div class="form-wrapper">
+
+
                 <h2>Contact Us</h2>
                 <form id="contact-form" method="POST">
-                  <label>Name</label>
-                  <input
-                  id="name-input"
-                  class="input-field" 
+                  <div class="form-item">
+                    <label>Name</label>
+                    <input
+                    id="name-input"
+                    class="input-field" 
+                    type="text" 
+                    name="name">
+
+                  </div>
+ 
+
+                  <div class="form-item">
+
+                    <label>Email</label>
+                    <input id="email-input" 
+                    class="input-field" 
+                    type="text" 
+                    name="email">
+                  </div>
+ 
+
+                  <div class="form-item">
+                    <label>Where are you located? <em>(City &amp; State)</em>
+                  </label>
+                  <input 
                   type="text" 
-                  name="name">
-
-                  <label>Email</label>
-                  <input id="email-input" 
-                  class="input-field" 
-                  type="text" 
-                  name="email">
+                  id="citySTATE" 
+                  name="citySTATE" 
+                  value=""  
+                  data-reqmsg="Please enter"  />  
+                  </div>
 
 
 
-
-
-
-
-
-                  
-
-                  <div id="frm_field_13607_container" class="form-field   frm_top_container">
-                    <label class="frm_pos_ frm_primary_label">How can we help you? (optional)
-                      <span class="frm_required"></span>
-                    </label>
-                    <textarea name="item_meta[13607]" id="message-input" rows="5"></textarea>
-
+                  <div class="form-item">
+                    <label>What types of services are you interested in?</label>
+                    <div id="services-selector"></div>
 
                   </div>
 
+
+                  <div class="form-item">
+                    <label>How Did You Find Us?</label>
+                    <div class="selectdiv">
+                      <label>
+                          <select id="foundUs-response">
+                            <option value="" selected="selected"> </option>
+                            <option value="Google Search">Google Search</option>
+                            <option value="Other Search Engine">Other Search Engine</option>
+                            <option value="Facebook/Instagram">Facebook/Instagram</option>
+                            <option value="Referred by someone else">Referred by someone else</option>
+                          </select>
+                      </label>
+                    </div>
+
+                  </div>
+
+                  <div class="form-item">
+                      <label>How can we help you? (optional)</label>
+                      <textarea id="message-input" rows="5"></textarea>
+                  </div>
+
+
                   <br>
-                  <a href="">
-                    <input id="submit-btn" type="submit" value="Request Quote Now" onclick="submitToAPI(event);"
-                      class="quote-btn">
-                  </a>
+                  <div class="form-item">
+                    
+                    <a href="">
+                      <input id="submit-btn" type="submit" value="Request Quote Now" 
+                        class="quote-btn" onclick="submitToAPI(event);">
+                    </a>
+                  </div>
+
                   
 
 
                 </form>
-              </div><!--  end form-wrapper    -->
+              </div><!--  end form-wrapper      onclick="submitToAPI(event);" -->
 
               <div class="contact-details">
 
@@ -354,12 +462,12 @@
                 <!--()(X)()-->
                 <div class="footer-column">
                     <div class="column-content">
-                        <h4 title="Photo Booth Near Me">Links</h4>
+                        <h4 title="">Links</h4>
                         <ul>
-                            <li><a href="request-a-quote.html" title ="photo booth near me">Contact</a></li>
-                            <li> <a href="FAQs.html" title ="photo booth near me">FAQs</a> </li>
-                            <li> <a href="photo-booth-rental-guide.html" title ="photo booth near me">Rental Guide</a> </li>
-                            <li> <a href="testimonials.html" title ="photo booth near me">Testimonials</a> </li>
+                            <li><a href="" title ="p">HOME</a></li>
+                            <li> <a href="" title ="">ABOUT</a> </li>
+                            <li> <a href="" title ="">SERVICES</a> </li>
+                            <li> <a href="" title ="">CONTACT</a> </li>
                         </ul>
 
                     </div>
@@ -368,19 +476,19 @@
                 <!--()()(X)-->
                 <div class="footer-column">
                     <div class="column-content">
-                        <h4 title="Photo Booth Near Me">Services</h4>
+                        <h4 title="">Services</h4>
                         <ul>
-                            <li><a href="request-a-quote.html" title ="photo booth near me">Contact</a></li>
-                            <li> <a href="FAQs.html" title ="photo booth near me">FAQs</a> </li>
-                            <li> <a href="photo-booth-rental-guide.html" title ="photo booth near me">Rental Guide</a> </li>
-                            <li> <a href="testimonials.html" title ="photo booth near me">Testimonials</a> </li>
+                            <li><a href="" title ="">FULL INSTALLS</a></li>
+                            <li> <a href="" title ="">RE-ROOFS</a> </li>
+                            <li> <a href="" title ="">ROOF REPAIRS</a> </li>
+                            <li> <a href="" title ="">GUTTER CLEANING</a> </li>
                         </ul>
 
                     </div>
                 </div>
             </div>
             <div class="footer-cities-wrapper">
-            <h4 class="areas-title" title="Photo Booth Near Me">Areas We Serve</h4>
+            <h4 class="areas-title" title="">Areas We Serve</h4>
             <div class="footer-row">
     
                     <span class="cities-list">
@@ -434,6 +542,7 @@
     <!-----------------------------------END FOOTER------------------------------------------------------------------------------------------------------------------------->
 
       <script src="nav.js"></script>
+      <script src="contact.js"></script>
     
 </body>
 </html>

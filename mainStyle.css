@@ -453,7 +453,14 @@ textarea{
     align-items: flex-start;
   }
 
-  
+  @media screen and (min-width: 1200px){
+
+
+    .form-wrapper{
+      width: 50%;
+    }
+
+  }
 
 
   @media screen and (min-width: 770px){

@@ -1,16 +1,21 @@
 $(document).ready(function() {
     let array = [
       { name: "Roof Repair", id: "1" },
-      { name: "Roof Install", id: "2" }
+      { name: "Roof Install", id: "2" },
+      { name: "Gutter Cleaning", id: "3" },
+      { name: "General Roofing", id: "4" }
     ];
+
+    
     function generateDropdown(list, id, name, placeholder) {
       $(document).off("click", ".dropdown__value");
       $(document).on("click", ".dropdown__value", function() {
         $(this).toggleClass("open");
       });
+
       $(document).on("click", "input[type='checkbox'][name='" + name + "']", function() {
         let checked = [];
-        $("input[type='checkbox'][name='" + name + "']:checked").each(() => {
+        $("input[type='checkbox'][name='" + name + "']:checked").each(function() {
           checked.push($(this).val());
         });
         console.log(checked);

@@ -315,10 +315,12 @@ body{
 
 
 /**********************Main Sections***********************/
-.container{
+.Kontainer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 1vh;
+    background-blend-mode: multiply;
 
 }
 .content{
@@ -452,6 +454,21 @@ body{
   }
 }
 
+
+
+@media (max-width: 768px){
+
+  .title--article {
+    font-size: 2rem;
+  }
+  .excerpt__image-wrapper img{
+    max-height: 60vh;
+    border-radius: 20px;
+  }
+}
+
+
+
 /**********************Services Section**********************/
 #services{
   background-color: #EDEDEDED;
@@ -557,12 +574,18 @@ body{
     }
     .galleryImg:hover {
       z-index: 2;
-      transform: scale(2);
+      transform: scale(2.25);
       opacity: 1;
     }
 
 
-
+    @media screen and (max-width: 770px){
+      .roof-img{
+        width: 70vw;
+      }
+  
+  
+    }
 
 
 /**********************Contact Section**********************/
@@ -625,13 +648,37 @@ textarea{
 
 
 
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  label{
+    display: unset;
+  }
 
 
+  @media screen and (min-width: 770px){
+    .form-wrapper{
+      width: 50%;
+    }
+    #services-selector{
+      width: 100%;
+    }
+    .selectdiv{
+      width: 100%;
+    }
 
 
+  }
 
-@media screen and (max-width: 900px) {
-    .contact-wrapper{
+
+@media screen and (max-width: 769px) {
+   .form-wrapper{
+    width: 100%;
+   }
+  .contact-wrapper{
         flex-direction: column;
         width: 90%;
 
@@ -650,12 +697,25 @@ textarea{
     .contact h3{
       font-size: 150%;
     }
-    input{
+    #email-input{
         max-width: 85%;
     }
+    #citySTATE{
+      max-width: 85%;
+  }
+    #name-input{
+      max-width: 85%;
+  }
     textarea{
         max-width: 85%;
     }
+    #services-selector{
+      width: 90%;
+    }
+    .selectdiv{
+      width: 90%;
+    }
+
 
 }
 

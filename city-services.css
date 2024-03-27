@@ -544,7 +544,7 @@ background-color: #EDEDEDED;
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 2vh;
-}
+} 
 .contact-wrapper{
     display:flex;
     flex-direction: row;
@@ -604,6 +604,10 @@ textarea{
 
   label{
     display: unset;
+  }
+
+  .privacy h5{
+    font-size: 0.83em;
   }
 
 

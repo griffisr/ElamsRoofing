@@ -12,3 +12,8 @@
 .modal-content{
     margin-top: 15vh;
 }
+
+.modal-image{
+    max-width: 30vw;
+    height: auto;
+}

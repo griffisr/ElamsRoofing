@@ -532,14 +532,14 @@ body{
     min-width: 80vw;
 
   }
-  .card-outer{
-    width: 50%;
-  }
-  .card-text{
-    font-size: small;
-  }
 }
-
+/**********************Image Modal**********************/
+.modal-content{
+  background-color: #535252;
+}
+.modal-header .btn-close {
+  margin: 0;
+}
 
 
 /**********************Contact Section**********************/

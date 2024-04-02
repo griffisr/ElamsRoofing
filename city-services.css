@@ -540,7 +540,9 @@ body{
 .modal-header .btn-close {
   margin: 0;
 }
-
+.modal-title{
+  font-size: inherit;
+}
 
 /**********************Contact Section**********************/
 #newcontact{

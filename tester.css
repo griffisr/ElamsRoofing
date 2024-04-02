@@ -1,146 +1,105 @@
-/* RESET RULES & HELPER CLASSES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
 :root {
-    --overlay: rgba(0, 0, 0, 0.35);
-    --box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.15);
-    --green: #528119;
-    --red: #e74c3c;
+  /* Color */
+  --lightest: #fffdf7;
+  --brown: #a88c7b;
+  --brown-darker: #9a7c6a;
+
+  /* Width */
+  --lg: 80rem;
+  --md: 50rem;
+  --sm: 30rem;
+}
+
+
+
+
+
+/**********************Services Section**********************/
+#services{
+  background-color: #EDEDEDED;
+
+}
+.services-wrapper{
+  width: inherit;
+  height: inherit;
+  margin: 0 1vw 3vh 1vw;
+}
+.section-subheading{
+  margin: 0 0 1rem 0;
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 90%;
+}
+.content-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.services-display{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+}
+.services-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1vw;
+}
+.services-col p{
+  text-align: center;
+}
+
+.service-heading{
+  margin-top: 1vh;
+  font-size: medium;
+ }
+ .see-gallery{
+  padding: 1vh;
+ }
+
+@media screen and (max-width: 640px)
+{
+  .services-display{
+    flex-direction: column;
   }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+
+}
+
+@media screen and (min-width: 770px){
+  #services-selector{
+    width: 110%;
   }
-  
-  a {
-    color: inherit;
+  .selectdiv{
+    width: 110%;
   }
-  
-  a:hover {
-    color: currentColor;
-    text-decoration: none;
-  }
-  
-  .cover {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .overlay {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--overlay);
-  }
-  
-  .btn-outline-success {
-    color: var(--green);
-  }
-  
-  .btn-outline-success:hover,
-  .btn-outline-success:not(:disabled):not(.disabled):active {
-    background: var(--green);
-  }
-  
-  .btn-outline-success,
-  .btn-outline-success:hover,
-  .btn-outline-success:not(:disabled):not(.disabled):active {
-    border-color: var(--green);
-  }
-  
-  
-  /* FIRST SECTION
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .hero-section {
-    height: 100vh;
-  }
-  
-  .hero-section video {
-    /*position: absolute;
-    top: 0;
-    left: 0;*/
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .hero-section svg {
-    bottom: 0;
-    left: 0;
-    height: 30vh;
-  }
-  
-  
-  /* SECOND SECTION
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .photos-section .card-outer {
-    margin-bottom: 30px;
-  }
-  
-  .photos-section .card {
-    border: none;
-    box-shadow: var(--box-shadow);
-  }
-  
-  .photos-section .card svg {
-    bottom: 0;
-    left: 0;
-    height: 55px;
-  }
-  
-  
-  /* THIRD SECTION
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .cover-section .cover {
-    background-attachment: fixed;
-  }
-  
-  .cover-section .caption {
-    bottom: 30px;
-    left: 15px;
-    z-index: 1;
-  }
-  
-  .cover-section svg {
-    bottom: 0;
-    left: 0;
-    height: 30vh;
-  }
-  
-  
-  /* FOOTER
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .page-footer {
-    padding: 50px 0;
-    box-shadow: var(--box-shadow);
-  }
-  
-  .page-footer .credits {
-    line-height: normal;
-  }
-  
-  .page-footer span {
-    color: var(--red);
-  }
-  
-  
-  /* MQ
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  @media screen and (min-width: 768px) {
-    .cover-section .caption {
-      bottom: 50px;
-    }
-    
-    .cover-section svg {
-      height: 50vh;
-    }
-  }
-  
-  @media screen and (min-width: 1200px) {
-    .photos-section .card-outer {
-      margin-bottom: 0;
-    }
-  }
+
+
+}
+
+
+@media screen and (max-width: 769px) {
+
+   textarea{
+       max-width: 85%;
+   }
+   #services-selector{
+     width: 90%;
+   }
+   .selectdiv{
+     width: 90%;
+   }
+
+   .service-wrap{
+    max-width: none;
+   }
+
+
+}

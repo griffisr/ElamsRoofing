@@ -1,203 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="tester.css">
-      <!--Initialize jquery-->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="icon" 
+    type="image/png" 
+    href="https://s3.amazonaws.com/rileyg.me/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="description" content="
+    Welcome to Elam's Roofing LLC, your premier choice for expert roofing services in CITY STATE. Led by owner Cameron, our locally seasoned team specializes in Gutter Clean Out, Roof Repairs, Chimney/Counterflashing, Full Installs, Re-Shingle, and Flat Roofs (EPDM). Count on us for reliable, durable, and aesthetically pleasing roofing solutions tailored to your needs. Experience the superior difference with Elam's Roofing LLC – your trusted partner for quality roofing in CITY STATE.">
+    <meta name="robots" content="index,follow">
+    <title>Elam's Roofing || CITY STATE</title>
+ 
+
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+  
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+  
+  
+
+  
+ 
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+  <link rel='stylesheet' id='foundation-icons-css'  href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css?ver=2.4.2.2' media='all' />
+  <!--Initialize jquery-->
+  
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+
+
+
+<!--My Styles-->
+  <link rel="stylesheet" href="city-services.css">
+
+  <link rel="stylesheet" href="tester.css">
+  
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="contactFrom.css">
+  <link rel="stylesheet" href="modal-gallery.css">
+
+
+
+<style>
+  html {
+  scroll-behavior: smooth;
+}
+</style>
+
+
 </head>
 <body>
-    <svg style="display:none;">
-        <symbol id="one" viewBox="0 0 1440 320" preserveAspectRatio="none">
-          <path fill="white" d="M0,96L1440,320L1440,320L0,320Z"></path>
-        </symbol>
-        <symbol id="two" viewBox="0 0 1440 320" preserveAspectRatio="none">
-          <path fill="white" d="M0,32L48,37.3C96,43,192,53,288,90.7C384,128,480,192,576,197.3C672,203,768,149,864,138.7C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </symbol>
-        <symbol id="three" viewBox="0 0 1440 320" preserveAspectRatio="none">
-          <path fill="white" d="M0,128L30,144C60,160,120,192,180,197.3C240,203,300,181,360,192C420,203,480,245,540,245.3C600,245,660,203,720,192C780,181,840,203,900,181.3C960,160,1020,96,1080,80C1140,64,1200,96,1260,122.7C1320,149,1380,171,1410,181.3L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
-        </symbol>
-        <symbol id="four" viewBox="0 0 1440 320" preserveAspectRatio="none">
-          <path fill="white" d="M0,192L120,192C240,192,480,192,720,165.3C960,139,1200,85,1320,58.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-        </symbol>
-        <symbol id="five" viewBox="0 0 1440 320" preserveAspectRatio="none">
-          <path fill="white" d="M0,32L120,69.3C240,107,480,181,720,192C960,203,1200,149,1320,122.7L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-        </symbol>
-        <symbol id="six" viewBox="0 0 1440 320" preserveAspectRatio="none">
-          <path fill="rgba(255, 255, 255, .8)" d="M0,32L120,64C240,96,480,160,720,160C960,160,1200,96,1320,64L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-        </symbol>
-      </svg>
+    <nav>
+        <div class="nav-row">
+          
+          <div class="quarter">
+              <img class="nav-logo" src="images/Logo/Logo-no-text.png" alt="">
+          </div>
+      
+          <div class="rest">
+            <i class="fa fa-bars"></i>
+      
+            <div class="text-menu">
+      
+              <div>
+                <a href="#home">Home</a>
+              </div>
+      
+              <span class="slash">/</span>
+      
+              <div>
+                <a href="#about">About</a>
+              </div>
+      
+              <span class="slash">/</span>
+      
+              <div><a href="#services">Services</a></div>
+      
+              <span class="slash">/</span>
+      
+              <div>
+                <a href="#newcontact">Contact Us</a>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </nav>
+
+   <!-- Header section -->
+   <header class="header" id="home">
+        
+    <div class="text-box">
+        <img src="images/Logo/Logo-no-text.png" alt="Elams Roofing" class="elams-roofing-logo">
+        <h1 class="heading-primary">
+            <span class="heading-primary-main">Elevate your roofing experience</span>
+           <!--<span class="heading-primary-sub">The secondary heading</span> -->
+        </h1>
+        <a href="#newcontact" class="btn btn-white btn-animated">Get a free Quote</a>
+    </div>
+</header>
+
+
+  <!-- Article section -->
+
+  <section class="section section--article" id="about">
+    <article>
+      <div class="article-wrapper">
+        <h2 class="title title--article">Expertise Meets Excellence with Elam's Roofing LLC</h2>
+      </div>
+
+      <div class="excerpt">
+        <div class="excerpt__image-wrapper">
+          <img src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/Cam+AI+Website+Photos/Cam-Left-Hero-600x800.png" alt="image"> <!--1200x800-->
+        </div>
+        <div class="excerpt__text-wrapper">
+          <p>
+            Welcome to Elam's Roofing LLC, your premier choice for expert roofing solutions in Southeastern Michigan. Meet Cameron, the 
+            passionate owner and driving force behind our commitment to excellence. With a vision to provide top-notch roofing solutions, 
+            Cameron brings years of local expertise to every project. 
+          </p>
+        </div>
+      </div>
+
+      <div class="excerpt excerpt--reverse">
+        <div class="excerpt__image-wrapper">
+          <img src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/Cam+AI+Website+Photos/roof-hero-600x800.png" alt="image"> <!--600x800-->
+        </div>
+        <div class="excerpt__text-wrapper">
+          <p>
+            At Elam's Roofing, we specialize in a range of services, including Gutter Clean Out, Roof Repairs, 
+            Chimney/Counterflashing, Full Installs, Re-Shingle, and Flat Roofs (EPDM). Our pride lies in delivering reliable, durable, and aesthetically pleasing roofing 
+            solutions tailored to your specific needs. Your satisfaction is our top priority, and with Cameron at the helm, you can trust that your roofing requirements, 
+            be it repairs or full installations, are in capable hands. Experience the 
+            difference with Elam's Roofing LLC &hyphen; where your roof is our reputation!
+          </p>
+        </div>
+      </div>
+    </article>
+  </section>
+      
+   <!-- Services Section -->
+ <section id="services">
+  <div class="services-wrapper">
+    <div class="service-wrap container">
+      <div class="content-row">
+          <div class="col-lg-12">
+            <h2 class="title title--article">Services</h2>
+              <h3 class="section-subheading text-muted">Transform Your Roof with Our Expertise!</h3>
+          </div>
+      </div>
+      <div class="services-display">
+          <div class="services-col">
+              <span class="fa-stack fa-4x">
+                  <i class="fa fa-home fa-stack-2x"></i>
+              </span>
+              <h4 class="service-heading">FULL INSTALLS</h4>
+              <p class="text-muted">At Elam's Roofing LLC, we specialize in providing comprehensive full installation services for residential and commercial properties. Our team of skilled professionals ensures that every aspect of your new roof installation is executed with precision and expertise. From selecting the right materials to the final touches, trust us to deliver a durable, long-lasting roof that enhances the value and appeal of your property.</p>
+          </div>
+          <div class="services-col">
+              <span class="fa-stack fa-4x">
+                  <i class="fa fa-wrench fa-stack-2x"></i>
+                  <i class="glyphicon glyphicon-heart"></i>
+              </span>
+              <h4 class="service-heading">Re&hyphen;roofs &amp; Repairs</h4>
+              <p class="text-muted">Whether your roof has suffered damage from severe weather or simply requires maintenance to prolong its lifespan, Elam's Roofing LLC has you covered. Our re-roof and repair services are tailored to address a wide range of issues, from minor leaks to extensive damage. With prompt response times and meticulous attention to detail, we'll restore the integrity of your roof and provide peace of mind for years to come.</p>
+          </div>
+          <div class="services-col">
+              <span class="fa-stack fa-4x">
+                  <i class="fa fa-tree fa-stack-2x"></i>
+              </span>
+              <h4 class="service-heading">Gutter Cleaning</h4>
+              <p class="text-muted">Maintaining clean and debris-free gutters is essential for protecting your property from water damage and preserving its structural integrity. At Elam's Roofing LLC, our gutter cleaning service ensures that your gutters are free from leaves, twigs, and other debris that can cause clogs and blockages. With our professional equipment and expertise, we'll keep your gutters flowing smoothly, preventing potential water damage and maintaining the overall health of your property.</p>
+          </div>
+      </div>
+
+                <!-------See More Button------->
+                <div class="see-gallery row">
+                  <div class="col-12 text-center">
+                    <a href="#roof" class="btn btn-outline-success thumbnail open-modal" role="button" data-group-id="group-1 group-2 group-3">See More Photos</a>
+                  </div>
+                </div>
+  </div>
+
+  </div>
+
+</section>
+
+
+
+
+      
+      <div class="hidden" id="img-repo">
+                <!-- #image-1 -->
+                <div class="carousel-item" data-group-id="group-1">
+                  <img class="thumbnail img-responsive modal-img" title="FULL INSTALLS" src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof3.png">
+              </div>
+              <div class="carousel-item" data-group-id="group-1">
+                  <img class="thumbnail img-responsive modal-img" title="Image 12" src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof5.png">
+              </div>
+              <div class="carousel-item" data-group-id="group-1">
+                  <img class="thumbnail img-responsive modal-img" title="Image 13" src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof6.png">
+              </div>
+              <!-- #image-2 -->
+              <div class="carousel-item" data-group-id="group-2">
+                  <img class="thumbnail img-responsive modal-img" title="RE&hyphen;ROOFS &amp; REPAIRS" src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof7.png">
+              </div>
+              <div class="carousel-item" data-group-id="group-2">
+                  <img class="thumbnail img-responsive modal-img" title="Image 22" src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof8.png">
+              </div>
+              <div class="carousel-item" data-group-id="group-2">
+                  <img class="thumbnail img-responsive modal-img" title="Image 23" src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof9.png">
+              </div>
+              <!-- #image-3 -->
+              <div class="carousel-item" data-group-id="group-3">
+                  <img class="thumbnail img-responsive modal-img" title="GUTTER CLEANING" src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/Gutter.png">
+              </div>
+              <div class="carousel-item" data-group-id="group-3">
+                  <img class="thumbnail img-responsive modal-img" title="Image 32" src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof99.png">
+              </div>
+              <div class="carousel-item" data-group-id="group-3">
+                  <img class="thumbnail img-responsive modal-img" title="Image 33" src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof10.png">
+              </div>
+              <!-- #image-4 -->
+              <div class="carousel-item" data-group-id="group-4">
+                  <img class="thumbnail img-responsive modal-img" title="EMERGENCY ROOFING SERVICES" src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof1.png">
+              </div>
+              <div class="carousel-item" data-group-id="group-4">
+                  <img class="thumbnail img-responsive modal-img" title="Image 42" src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof2.png">
+              </div>
+              <div class="carousel-item" data-group-id="group-4">
+                  <img class="thumbnail img-responsive modal-img" title="Image 43" src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof3.png">
+              </div>
+    </div>
+
+    
+    <div class="modal" id="modal-gallery" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h3 class="modal-title"></h3>
+              </div>
+              <div class="modal-body">
+                  <div id="modal-carousel" class="carousel slide">
+                      <div class="carousel-inner">
+                          <!-- Carousel items will be appended here -->
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#modal-carousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#modal-carousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+<!--------------------Video Section--------------------------->
       <section class="hero-section position-relative">
-        <video src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down-by-the-river_compressed.mp4" autoplay loop muted playsinline></video>
+        <video src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/videos/trimmed-hero-video-compressed.mp4" autoplay loop muted playsinline></video>
         <div class="overlay position-absolute d-flex align-items-center justify-content-center font-weight-bold text-white h2 mb-0">
           <blockquote class="p-4 mb-0">
-            <p>By discovering nature, you discover yourself. </p>
-            <footer class="blockquote-footer text-white text-right">Maxime Lagacé</footer>
+            <img src="images/Logo/LOGO-no-pad.png" alt="Elams Roofing" class="elams-roofing-logo video-logo">
+         <!--<p>Elevate your roofing experience today!</p> -->
           </blockquote>
         </div>
         <svg class="position-absolute w-100">
           <use xlink:href="#one"></use>
         </svg>
       </section>
-      <section class="photos-section py-5 d-flex justify-content-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-sm-6 col-xl-3 d-flex card-outer">
-              <div class="card">
-                <div class="position-relative">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature11.jpg" class="card-img-top" alt="">
-                  <svg class="position-absolute w-100">
-                    <use xlink:href="#two"></use>
-                  </svg>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">silhoutte of mountains during sunset</h5>
-                  <p class="card-text">Photo by <a href="https://unsplash.com/@von_co" target="_blank">Ivana Cajina</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-xl-3 d-flex card-outer">
-              <div class="card">
-                <div class="position-relative">
-                  <svg class="position-absolute w-100">
-                    <use xlink:href="#three"></use>
-                  </svg>
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature2.jpg" class="card-img-top" alt="">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">landscape photography of brown mountain</h5>
-                  <p class="card-text">Photo by <a href="https://unsplash.com/@wilstewart3" target="_blank">Wil Stewart</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-xl-3 d-flex card-outer">
-              <div class="card">
-                <div class="position-relative">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature4.jpg" class="card-img-top" alt="">
-                  <svg class="position-absolute w-100">
-                    <use xlink:href="#four"></use>
-                  </svg>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">aerial island and beaches</h5>
-                  <p class="card-text">Photo by <a href="https://unsplash.com/@amandabereckonedwith" target="_blank">Amanda Phung</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-xl-3 d-flex card-outer">
-              <div class="card">
-                <div class="position-relative">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature6.jpg" class="card-img-top" alt="">
-                  <svg class="position-absolute w-100">
-                    <use xlink:href="#five"></use>
-                  </svg>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">photo of two black, white, and orange koi fish</h5>
-                  <p class="card-text">Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-12 text-center">
-              <a href="https://codepen.io/tutsplus/full/KLXpdm" class="btn btn-outline-success" role="button" target="_blank">See More Photos</a>
-            </div>
-          </div>
+
+
+
+
+
+
+<!--Start Contact Section-->
+<section class="contact Kontainer" id="newcontact">
+        
+  <div class="content contact-wrapper">
+
+
+    <div class="form-wrapper">
+
+
+      <h2>Contact Us</h2>
+      <form id="contact-form" method="POST">
+        <div class="form-item">
+          <label>Name</label>
+          <input
+          id="name-input"
+          class="input-field" 
+          type="text" 
+          name="name">
+
         </div>
-      </section>
-      <section class="cover-section position-relative">
-        <div class="cover" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/nature-pexels.jpg);">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/nature-pexels.jpg" class="img-fluid invisible" alt="" />
+
+
+        <div class="form-item">
+
+          <label>Phone Number or Email</label>
+          <input id="email-input" 
+          class="input-field" 
+          type="text" 
+          name="email">
         </div>
-        <div class="caption position-absolute h4 mb-0">
-          Image from <a href="https://www.pexels.com/el-gr/@sarimphotos" target="_blank">Mohamed Sarim</a>
+
+
+        <div class="form-item">
+          <label>Where are you located? <em>(City &amp; State)</em>
+        </label>
+        <input 
+        type="text" 
+        id="citySTATE" 
+        name="citySTATE" 
+        value=""  
+        data-reqmsg="Please enter"  />  
         </div>
-        <svg class="position-absolute w-100">
-          <use xlink:href="#six"></use>
-        </svg>
-      </section>
-      <footer class="position-relative page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/content/reboot/" target="_blank">Reboot</a>
-                </li>
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/content/typography/" target="_blank">Typography</a>
-                </li>
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/content/code/" target="_blank">Code</a>
-                </li>
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/content/images/" target="_blank">Images</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/components/alerts/" target="_blank">Alerts</a>
-                </li>
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/components/badge/" target="_blank">Badge</a>
-                </li>
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/components/breadcrumb/" target="_blank">Breadcrumb</a>
-                </li>
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/components/buttons/" target="_blank">Buttons</a>
-                </li>
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/components/button-group/" target="_blank">Button Group</a>
-                </li>
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/components/card/" target="_blank">Card</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <ul class="list-unstyled">
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/components/carousel/" target="_blank">Carousel</a>
-                </li>
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/components/collapse/" target="_blank">Collapse</a>
-                </li>
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/components/dropdowns/" target="_blank">Dropdowns</a>
-                </li>
-                <li>
-                  <a href="https://getbootstrap.com/docs/4.5/components/forms/" target="_blank">Forms</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <p>Demo built with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, an open source toolkit for developing with HTML, CSS, and JS.</p>
-            </div>
+
+
+
+        <div class="form-item">
+          <label>What types of services are you interested in?</label>
+          <div id="services-selector"></div>
+
+        </div>
+
+
+        <div class="form-item">
+          <label>How Did You Find Us?</label>
+          <div class="selectdiv">
+            <label>
+                <select id="foundUs-response">
+                  <option value="" selected="selected"> </option>
+                  <option value="Google Search">Google Search</option>
+                  <option value="Other Search Engine">Other Search Engine</option>
+                  <option value="Facebook/Instagram">Facebook/Instagram</option>
+                  <option value="Referred by someone else">Referred by someone else</option>
+                </select>
+            </label>
           </div>
-          <div class="credits mt-4 text-center">
-            <div class="credits-inner">
-              <p class="mb-0">
-                <small>Images from <a href="https://unsplash.com/" target="_blank">Unsplash.com</a> & <a href="https://www.pexels.com/" target="_blank">Pexels.com</a> | SVG icons from <a href="https://getwaves.io/" target="_blank">getwaves.io</a> | Video from <a href="https://coverr.co/" target="_blank">Coverr.co </a>
-                </small>
-              </p>
-              <p class="mb-0">
-                <small>
-                  Made with <span>❤</span> by <a href="http://georgemartsoukos.com/" target="_blank">George Martsoukos</a>
-                </small>
-              </p>
-            </div>
-          </div>
+
         </div>
-      </footer>
-      <script src="mainScript.js"></script>
+
+        <div class="form-item">
+            <label>How can we help you? (optional)</label>
+            <textarea id="message-input" rows="5"></textarea>
+        </div>
+
+
+        <br>
+        <div class="form-item">
+          
+          <a href="">
+            <input id="submit-btn" type="submit" value="Request Quote Now" 
+              class="quote-btn" onclick="submitToAPI(event);">
+          </a>
+        </div>
+
+        
+
+
+      </form>
+    </div><!--  end form-wrapper      onclick="submitToAPI(event);" -->
+
+    <div class="contact-details">
+
+      <div class="phone">
+        <h3 class="contact-title">By phone</h3>
+        <p class="contact-text">Call us at <br><a href="tel:">(419) 708-1019</a></p>
+      </div>
+      <div class="email">
+        <h3 class="contact-title">By email</h3>
+        <p class="contact-text">Send an email to <em id="email-address">elamsroofing@gmail.com</em></p>
+      </div>
+      <div class="message">
+        <h3 class="contact-title">Message</h3>
+        <p class="contact-text">Send us a message via our Contact form.</p>
+      </div>
+
+
+    </div>
+
+
+
+
+
+    
+  </div><!--  end contact-wrapper  -->
+  <div class="privacy">
+    <h5>We are 100% committed to your privacy and will use the information you provide us solely to contact you about relevant content and services. For more information, ask about our Privacy Policy.</h5>
+  </div><!--  end privacy    -->
+</section>
+<!--End Contact Section-->
+
+
+
+
+
+
+
+
+
+
+
+<!-----------Start Footer----------------->
+<div class="section-footer">
+<div class="footer-content">
+    <div class="footer-wrapper">
+
+        <!--(X)()()-->
+        <div class="footer-column">
+            <div class="column-content footer-social">
+                <!--FaceBook Icon/Link-->
+                <span class="pp-social-icon"itemscope itemtype="http://schema.org/Organization">
+                    <link itemprop="url" href=""/>
+                    <a itemprop="sameAs" href="https://www.facebook.com/snapboothphotos" target="_blank" title="Facebook"
+                    aria-label="Facebook" role="button" rel="noopener" style="padding-right: 5px;">
+                    <i class="fa fa-facebook"style="font-size: 30px;"></i>
+                    </a>
+                  </span>
+                  <br/>
+                  Cam's Roofing<br />
+                  <a href="tel:(419)708-1019" class="tel">(419) 708-1019</a> 
+
+
+
+
+            </div>
+
+        </div>
+
+        <!--()(X)()-->
+        <div class="footer-column">
+            <div class="column-content">
+                <h4 title="">Links</h4>
+                <ul>
+                    <li><a href="" title ="p">HOME</a></li>
+                    <li> <a href="" title ="">ABOUT</a> </li>
+                    <li> <a href="" title ="">SERVICES</a> </li>
+                    <li> <a href="" title ="">CONTACT</a> </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!--()()(X)-->
+        <div class="footer-column">
+            <div class="column-content">
+                <h4 title="">Services</h4>
+                <ul>
+                    <li><a href="" title ="">FULL INSTALLS</a></li>
+                    <li> <a href="" title ="">RE-ROOFS</a> </li>
+                    <li> <a href="" title ="">ROOF REPAIRS</a> </li>
+                    <li> <a href="" title ="">GUTTER CLEANING</a> </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-cities-wrapper">
+    <h4 class="areas-title" title="">Areas We Serve</h4>
+    <div class="footer-row">
+
+            <span class="cities-list">
+                <a href="" title ="">Ypsilanti, Michigan</a> |
+                <a href="" title ="">Saline, Michigan</a> |
+                <a href="" title ="">Toledo, Ohio </a> |
+                <a href="" title ="">Akron, Ohio</a> |
+                <a href="" title ="">Sterling Heights, Michigan</a> |
+                <a href="" title ="">Warren, Michigan</a> |
+                <a href="" title ="">Livonia, Michigan</a> |
+                <a href="" title ="">Dearborn, Michigan</a> |
+                <a href="" title ="">Parma, Ohio</a> |
+                <a href="" title ="">Clinton Township, Michigan</a> |
+                <a href="" title ="">Canton, Michigan</a> |
+                <a href="" title ="">Westland, Michigan</a> |
+                <a href="" title ="">Troy, Michigan</a> |
+                <a href="" title ="">Taylor, Michigan</a> |
+                <a href="" title ="">Dearborn Heights, Michigan</a> |
+                <a href="" title ="">Lorain, Ohio</a> |
+                <a href="" title ="">Canton, Ohio</a> |
+                <a href="" title ="">St. Clair Shores, Michigan</a> |
+                <a href="" title ="">Novi, Michigan</a> |
+                <a href="" title ="">Lakewood, Ohio</a> |
+                <a href="" title ="">Redford Township, Michigan</a> |
+                <a href="" title ="">Farmington Hills, Michigan</a> |
+                <a href="" title ="">Southfield, Michigan</a> |
+                <a href="" title ="">West Bloomfield Township, Michigan</a> |
+                <a href="" title ="">Roseville, Michigan</a> |
+                <a href="" title ="">Saginaw, Michigan</a> |
+                <a href="" title ="">Kentwood, Michigan</a> |
+                <a href="" title ="">Battle Creek, Michigan</a> |
+                <a href="" title ="">Wyoming, Michigan</a> |
+                <a href="" title ="">Waterford Township, Michigan</a> |
+                <a href="" title ="">Ann Arbor, Michigan</a>
+
+              </span>
+
+    </div>
+    
+
+    </div>
+    
+
+</div>
+
+
+
+</div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+
+ <script src="nav.js"></script>
+ <script src="contact.js"></script>
+ <script src="modal-gallery.js"></script>
 </body>
 </html>

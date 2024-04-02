@@ -532,6 +532,12 @@ body{
     min-width: 80vw;
 
   }
+  .card-outer{
+    width: 50%;
+  }
+  .card-text{
+    font-size: small;
+  }
 }
 
 

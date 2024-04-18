@@ -42,12 +42,12 @@
 
 <!--My Styles-->
   <link rel="stylesheet" href="city-services.css">
-
-  <link rel="stylesheet" href="tester.css">
   
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="contactFrom.css">
   <link rel="stylesheet" href="modal-gallery.css">
+  <link rel="stylesheet" href="reviews.css">
+
 
 
 
@@ -149,52 +149,107 @@
     </article>
   </section>
       
-   <!-- Services Section -->
- <section id="services">
-  <div class="services-wrapper">
-    <div class="service-wrap container">
-      <div class="content-row">
-          <div class="col-lg-12">
-            <h2 class="title title--article">Services</h2>
-              <h3 class="section-subheading text-muted">Transform Your Roof with Our Expertise!</h3>
-          </div>
-      </div>
-      <div class="services-display">
-          <div class="services-col">
-              <span class="fa-stack fa-4x">
-                  <i class="fa fa-home fa-stack-2x"></i>
-              </span>
-              <h4 class="service-heading">FULL INSTALLS</h4>
-              <p class="text-muted">At Elam's Roofing LLC, we specialize in providing comprehensive full installation services for residential and commercial properties. Our team of skilled professionals ensures that every aspect of your new roof installation is executed with precision and expertise. From selecting the right materials to the final touches, trust us to deliver a durable, long-lasting roof that enhances the value and appeal of your property.</p>
-          </div>
-          <div class="services-col">
-              <span class="fa-stack fa-4x">
-                  <i class="fa fa-wrench fa-stack-2x"></i>
-                  <i class="glyphicon glyphicon-heart"></i>
-              </span>
-              <h4 class="service-heading">Re&hyphen;roofs &amp; Repairs</h4>
-              <p class="text-muted">Whether your roof has suffered damage from severe weather or simply requires maintenance to prolong its lifespan, Elam's Roofing LLC has you covered. Our re-roof and repair services are tailored to address a wide range of issues, from minor leaks to extensive damage. With prompt response times and meticulous attention to detail, we'll restore the integrity of your roof and provide peace of mind for years to come.</p>
-          </div>
-          <div class="services-col">
-              <span class="fa-stack fa-4x">
-                  <i class="fa fa-tree fa-stack-2x"></i>
-              </span>
-              <h4 class="service-heading">Gutter Cleaning</h4>
-              <p class="text-muted">Maintaining clean and debris-free gutters is essential for protecting your property from water damage and preserving its structural integrity. At Elam's Roofing LLC, our gutter cleaning service ensures that your gutters are free from leaves, twigs, and other debris that can cause clogs and blockages. With our professional equipment and expertise, we'll keep your gutters flowing smoothly, preventing potential water damage and maintaining the overall health of your property.</p>
-          </div>
-      </div>
 
-                <!-------See More Button------->
-                <div class="see-gallery row">
-                  <div class="col-12 text-center">
-                    <a href="#roof" class="btn btn-outline-success thumbnail open-modal" role="button" data-group-id="group-1 group-2 group-3">See More Photos</a>
-                  </div>
+
+     <!--------------Services Section--------------------->
+      <section class="photos-section py-4 d-flex justify-content-center">
+        <div class="services-container container">
+
+          <!-------Header------->
+          <div class=" services-container container">
+            <div class="content-row">
+                <div class="col-lg-12">
+                  <h2 class="title title--article">Services</h2>
+                    <h3 class="section-subheading text-muted">Transform Your Roof with Our Expertise!</h3>
                 </div>
-  </div>
+            </div>
 
-  </div>
 
-</section>
+          <!-------Services Cards------->
+          <div class="row">
+
+            <div class=" col-sm-6 col-xl-3 d-flex card-outer">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof3.png" class="thumbnail card-img-top" alt="" data-group-id="group-1">
+                  <svg class="position-absolute w-100">
+                    <use xlink:href="#two"></use>
+                  </svg>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Full Installs</h5>
+                  <p class="card-text">At Elam's Roofing LLC, we specialize in providing comprehensive full installation services 
+                    for residential and commercial properties. Our team of skilled professionals ensures that every aspect of your new 
+                    roof installation is executed with precision and expertise. From selecting the right materials to the final touches, 
+                    trust us to deliver a durable, long-lasting roof that enhances the value and appeal of your property.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-xl-3 d-flex card-outer">
+              <div class="card">
+                <div class="position-relative">
+                  <svg class="position-absolute w-100">
+                    <use xlink:href="#three"></use>
+                  </svg>
+                  <img src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof1.png" class="thumbnail card-img-top" alt="" data-group-id="group-2">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Re&hyphen;roofs &amp; Repairs</h5>
+                  <p class="card-text">Whether your roof has suffered damage from severe weather or simply requires maintenance to 
+                    prolong its lifespan, Elam's Roofing LLC has you covered. Our re-roof and repair services are tailored to address 
+                    a wide range of issues, from minor leaks to extensive damage. With prompt response times and meticulous attention 
+                    to detail, we'll restore the integrity of your roof and provide peace of mind for years to come.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-xl-3 d-flex card-outer">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/Gutter.png" class="thumbnail card-img-top" alt="" data-group-id="group-3">
+                  <svg class="position-absolute w-100">
+                    <use xlink:href="#four"></use>
+                  </svg>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Gutter Cleaning</h5>
+                  <p class="card-text">Maintaining clean and debris-free gutters is essential for protecting your property from water 
+                    damage and preserving its structural integrity. At Elam's Roofing LLC, our gutter cleaning service ensures that your 
+                    gutters are free from leaves, twigs, and other debris that can cause clogs and blockages. With our professional equipment 
+                    and expertise, we'll keep your gutters flowing smoothly, preventing potential water damage and maintaining the overall 
+                    health of your property.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-xl-3 d-flex card-outer">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/images/sq/roof4.png" class="thumbnail card-img-top" alt="" data-group-id="group-4">
+                  <svg class="position-absolute w-100">
+                    <use xlink:href="#five"></use>
+                  </svg>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Emergency Roofing Services</h5>
+                  <p class="card-text">When disaster strikes, count on Elam's Roofing LLC for prompt and reliable emergency roofing services. 
+                    Whether it's storm damage or unexpected leaks, our experienced team is available to address your urgent roofing needs quickly. 
+                    Rest assured knowing that we'll restore the safety and integrity of your roof efficiently and effectively.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-------See More Button------->
+          <div class="row mt-5">
+            <div class="col-12 text-center">
+              <a href="#roof" class="btn btn-outline-success thumbnail open-modal" role="button" data-group-id="group-1 group-2 group-3">See More Photos</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 
@@ -274,12 +329,270 @@
   </div>
 
 
+<!-- Featured Testimonials -->
+<section class="container-fluid review-section">
+  <section class="row text-center">
+    <div class="col-lg-12">
+      <h2 class="title title--article">Customers Reviews</h2>
+        <h3 class="section-subheading text-muted">Discover Why Our Customers Choose Elam's Roofing</h3>
+    </div>
+  </section>
+  <section class="row">
+
+    <!-- Featured Testimonial -->
+    <section class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <!-- Testimonial Rating -->
+          <section class="review-rating text-left">
+            <form>
+              <fieldset class="rating">
+                <input type="radio" id="review-4-star5" name="rating" value="5" /><label class="full" for="review-4-star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="review-4-star4" name="rating" value="4" /><label class="full" for="review-4-star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="review-4-star3" name="rating" value="3" checked /><label class="full" for="review-4-star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="review-4-star2" name="rating" value="2" /><label class="full" for="review-4-star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="review-4-star1" name="rating" value="1" /><label class="full" for="review-4-star1" title="Sucks big time - 1 star"></label>
+              </fieldset>
+            </form>
+          </section>
+
+          <!-- Testimonial Author -->
+          <section class="review-author text-right">
+            <span>John Doe</span>
+          </section>
+        </div>
+        <div class="panel-body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="panel-footer text-right"><em>June 2023</em></div>
+      </div>
+    </section>
+
+    <!-- Featured Testimonial -->
+    <section class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <!-- Testimonial Rating -->
+          <section class="review-rating text-left">
+            <form>
+              <fieldset class="rating">
+                <input type="radio" id="review-4-star5" name="rating" value="5" /><label class="full" for="review-4-star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="review-4-star4" name="rating" value="4" /><label class="full" for="review-4-star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="review-4-star3" name="rating" value="3" checked /><label class="full" for="review-4-star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="review-4-star2" name="rating" value="2" /><label class="full" for="review-4-star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="review-4-star1" name="rating" value="1" /><label class="full" for="review-4-star1" title="Sucks big time - 1 star"></label>
+              </fieldset>
+            </form>
+          </section>
+
+          <!-- Testimonial Author -->
+          <section class="review-author text-right">
+            <span>John Doe</span>
+          </section>
+        </div>
+        <div class="panel-body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="panel-footer text-right"><em>June 2023</em></div>
+      </div>
+    </section>
+
+    <!-- Featured Testimonial -->
+    <section class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <!-- Testimonial Rating -->
+          <section class="review-rating text-left">
+            <form>
+              <fieldset class="rating">
+                <input type="radio" id="review-4-star5" name="rating" value="5" /><label class="full" for="review-4-star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="review-4-star4" name="rating" value="4" /><label class="full" for="review-4-star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="review-4-star3" name="rating" value="3" checked /><label class="full" for="review-4-star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="review-4-star2" name="rating" value="2" /><label class="full" for="review-4-star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="review-4-star1" name="rating" value="1" /><label class="full" for="review-4-star1" title="Sucks big time - 1 star"></label>
+              </fieldset>
+            </form>
+          </section>
+
+          <!-- Testimonial Author -->
+          <section class="review-author text-right">
+            <span>John Doe</span>
+          </section>
+        </div>
+        <div class="panel-body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="panel-footer text-right"><em>June 2023</em></div>
+      </div>
+    </section>
+
+    <!-- Featured Testimonial -->
+    <section class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <!-- Testimonial Rating -->
+          <section class="review-rating text-left">
+            <form>
+              <fieldset class="rating">
+                <input type="radio" id="review-4-star5" name="rating" value="5" /><label class="full" for="review-4-star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="review-4-star4" name="rating" value="4" /><label class="full" for="review-4-star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="review-4-star3" name="rating" value="3" checked /><label class="full" for="review-4-star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="review-4-star2" name="rating" value="2" /><label class="full" for="review-4-star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="review-4-star1" name="rating" value="1" /><label class="full" for="review-4-star1" title="Sucks big time - 1 star"></label>
+              </fieldset>
+            </form>
+          </section>
+
+          <!-- Testimonial Author -->
+          <section class="review-author text-right">
+            <span>John Doe</span>
+          </section>
+        </div>
+        <div class="panel-body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="panel-footer text-right"><em>June 2023</em></div>
+      </div>
+    </section>
+  </section>
+  <section class="row text-center" style="margin-top:30px;">
+    <button type="button" class="btn btn-primary-outline" onclick="window.open('https://www.google.com', '_blank')">Submit A Review</button>
+  </section>
+</section>
+
 <!--------------------Video Section--------------------------->
       <section class="hero-section position-relative">
         <video src="https://s3.us-east-2.amazonaws.com/elamsroofing.com/videos/trimmed-hero-video-compressed.mp4" autoplay loop muted playsinline></video>
         <div class="overlay position-absolute d-flex align-items-center justify-content-center font-weight-bold text-white h2 mb-0">
+               
+          <div class="review-overlay">
+                <!-- Featured Testimonial -->
+                <section class="">
+                  <div class="panel panel-primary review-card">
+                    <div class="panel-heading">
+                      <!-- Testimonial Rating -->
+                      <section class="review-rating text-left">
+                        <form>
+                          <fieldset class="rating">
+                            <input type="radio" id="review-4-star5" name="rating" value="5" /><label class="full" for="review-4-star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="review-4-star4" name="rating" value="4" /><label class="full" for="review-4-star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="review-4-star3" name="rating" value="3" checked /><label class="full" for="review-4-star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="review-4-star2" name="rating" value="2" /><label class="full" for="review-4-star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="review-4-star1" name="rating" value="1" /><label class="full" for="review-4-star1" title="Sucks big time - 1 star"></label>
+                          </fieldset>
+                        </form>
+                      </section>
+
+                      <!-- Testimonial Author -->
+                      <section class="review-author text-right">
+                        <span>John Doe</span>
+                      </section>
+                    </div>
+                    <div class="panel-body">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="panel-footer text-right"><em>June 2023</em></div>
+                  </div>
+                </section>
+
+                <!-- Featured Testimonial -->
+                <section class="col-sm-3">
+                  <div class="panel panel-primary review-card">
+                    <div class="panel-heading">
+                      <!-- Testimonial Rating -->
+                      <section class="review-rating text-left">
+                        <form>
+                          <fieldset class="rating">
+                            <input type="radio" id="review-4-star5" name="rating" value="5" /><label class="full" for="review-4-star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="review-4-star4" name="rating" value="4" /><label class="full" for="review-4-star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="review-4-star3" name="rating" value="3" checked /><label class="full" for="review-4-star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="review-4-star2" name="rating" value="2" /><label class="full" for="review-4-star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="review-4-star1" name="rating" value="1" /><label class="full" for="review-4-star1" title="Sucks big time - 1 star"></label>
+                          </fieldset>
+                        </form>
+                      </section>
+
+                      <!-- Testimonial Author -->
+                      <section class="review-author text-right">
+                        <span>John Doe</span>
+                      </section>
+                    </div>
+                    <div class="panel-body">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="panel-footer text-right"><em>June 2023</em></div>
+                  </div>
+                </section>
+
+                <!-- Featured Testimonial -->
+                <section class="col-sm-3">
+                  <div class="panel panel-primary review-card">
+                    <div class="panel-heading">
+                      <!-- Testimonial Rating -->
+                      <section class="review-rating text-left">
+                        <form>
+                          <fieldset class="rating">
+                            <input type="radio" id="review-4-star5" name="rating" value="5" /><label class="full" for="review-4-star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="review-4-star4" name="rating" value="4" /><label class="full" for="review-4-star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="review-4-star3" name="rating" value="3" checked /><label class="full" for="review-4-star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="review-4-star2" name="rating" value="2" /><label class="full" for="review-4-star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="review-4-star1" name="rating" value="1" /><label class="full" for="review-4-star1" title="Sucks big time - 1 star"></label>
+                          </fieldset>
+                        </form>
+                      </section>
+
+                      <!-- Testimonial Author -->
+                      <section class="review-author text-right">
+                        <span>John Doe</span>
+                      </section>
+                    </div>
+                    <div class="panel-body">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="panel-footer text-right"><em>June 2023</em></div>
+                  </div>
+                </section>
+
+
+                <!-- Featured Testimonial -->
+                <section class="col-sm-3">
+                  <div class="panel panel-primary review-card">
+                    <div class="panel-heading">
+                      <!-- Testimonial Rating -->
+                      <section class="review-rating text-left">
+                        <form>
+                          <fieldset class="rating">
+                            <input type="radio" id="review-4-star5" name="rating" value="5" /><label class="full" for="review-4-star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="review-4-star4" name="rating" value="4" /><label class="full" for="review-4-star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="review-4-star3" name="rating" value="3" checked /><label class="full" for="review-4-star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="review-4-star2" name="rating" value="2" /><label class="full" for="review-4-star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="review-4-star1" name="rating" value="1" /><label class="full" for="review-4-star1" title="Sucks big time - 1 star"></label>
+                          </fieldset>
+                        </form>
+                      </section>
+
+                      <!-- Testimonial Author -->
+                      <section class="review-author text-right">
+                        <span>John Doe</span>
+                      </section>
+                    </div>
+                    <div class="panel-body">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="panel-footer text-right"><em>June 2023</em></div>
+                  </div>
+                </section>
+            </div>
+
+
+
+
+
+
           <blockquote class="p-4 mb-0">
-            <img src="images/Logo/LOGO-no-pad.png" alt="Elams Roofing" class="elams-roofing-logo video-logo">
+         <!--<img src="images/Logo/LOGO-no-pad.png" alt="Elams Roofing" class="elams-roofing-logo video-logo"> -->
+
+
          <!--<p>Elevate your roofing experience today!</p> -->
           </blockquote>
         </div>

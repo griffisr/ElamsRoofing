@@ -1,3 +1,6 @@
+.testimonial-row{
+  display: flex;
+}
 .review-author {
     line-height: 35px;
   }
@@ -36,15 +39,13 @@
     font-style: italic;
   }
   
+  
 .review-overlay{
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    max-width: 95%;
+    width: 100%;
 }
-
-
-
 
 
   .review-card{
@@ -54,6 +55,19 @@
   .review-card p{
     font-size: 1rem;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* Rating */
   .rating {
     unicode-bidi: bidi-override;
@@ -103,3 +117,67 @@
     left: 2px;
   }
   
+
+
+
+
+  @media screen and (min-width: 1025px) {
+
+    .testimonial-row{
+      flex-direction: row;
+    }
+    .testimonial-card{
+      width: 30vw;
+      max-height: 90vh;
+    }
+    .panel-body{
+      display: flex;
+      min-height: 40vh;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+
+@media screen and (max-width: 1024px) {
+
+  .panel{
+    padding: 10px 10px 0 10px;
+  }
+  .testimonial-row{
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .testimonial-card{
+    max-height: 30vh;
+    background-color: #ededed1b;
+  }
+  
+  .testimonial-card p{
+    font-size: 60%;
+    margin-bottom: .5rem;
+  }
+  .testimonial-card em{
+    font-size: 60%;
+  }
+  .rating{
+    font-size: 50%;
+    justify-content: flex-start;
+  }
+  .rating label{
+    padding-left: 40px;
+  }
+
+}
+
+@media screen and (max-width: 756px) {
+  .testimonial-card p{
+    font-size: 45%;
+    margin-bottom: .5rem;
+  }
+  .testimonial-card em{
+    font-size: 45%;
+  }
+}

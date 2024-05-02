@@ -479,6 +479,12 @@ body{
   height: inherit;
   margin: 0 1vw 3vh 1vw;
 }
+
+.card-header-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .section-subheading{
   margin: 0 0 1rem 0;
   text-align: center;
@@ -513,7 +519,15 @@ body{
   background-color: #ededed4c;
   border-radius: 20px;
 }
+.card-title{
+  align-self: center;
 
+}
+.photo-btn{
+  padding: 5px 10px!important;
+  font-size: 75%;
+  align-self: center;
+}
 
 @media screen and (min-width: 1200px)
 {
@@ -535,7 +549,7 @@ body{
 }
 /**********************Image Modal**********************/
 .modal-content{
-  background-color: #535252;
+  background-color: #a8a8a8ed;
 }
 .modal-header .btn-close {
   margin: 0;

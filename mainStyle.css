@@ -1,6 +1,176 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
+
+
+
+
+/* RESET RULES & HELPER CLASSES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  
+  .cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--overlay);
+  }
+  
+  .btn-outline-success {
+    color: var(--green);
+  }
+  
+  .btn-outline-success:hover,
+  .btn-outline-success:not(:disabled):not(.disabled):active {
+    background: var(--green);
+  }
+  
+  .btn-outline-success,
+  .btn-outline-success:hover,
+  .btn-outline-success:not(:disabled):not(.disabled):active {
+    border-color: var(--green);
+  }
+  
+  
+  /* FIRST SECTION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .hero-section {
+    height: 100vh;
+  }
+  
+  .hero-section video {
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-section svg {
+    bottom: 0;
+    left: 0;
+    height: 30vh;
+  }
+  
+  
+  /* SECOND SECTION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .photos-section .card-outer {
+    margin-bottom: 30px;
+  }
+  
+  .photos-section .card {
+    border: none;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .photos-section .card svg {
+    bottom: 0;
+    left: 0;
+    height: 55px;
+  }
+  
+  
+  /* THIRD SECTION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .cover-section .cover {
+    background-attachment: fixed;
+  }
+  
+  .cover-section .caption {
+    bottom: 30px;
+    left: 15px;
+    z-index: 1;
+  }
+  
+  .cover-section svg {
+    bottom: 0;
+    left: 0;
+    height: 30vh;
+  }
+  
+  
+
+  
+  /* MQ
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  @media screen and (min-width: 768px) {
+    .cover-section .caption {
+      bottom: 50px;
+    }
+    
+    .cover-section svg {
+      height: 50vh;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .photos-section .card-outer {
+      margin-bottom: 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 :root {
   /* Color */
   --lightest: #fffdf7;
@@ -11,6 +181,13 @@
   --lg: 80rem;
   --md: 50rem;
   --sm: 30rem;
+
+
+
+  --overlay: rgba(0, 0, 0, 0.35);
+  --box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.15);
+  --green: #528119;
+  --red: #e74c3c;
 }
 
 
@@ -138,10 +315,12 @@ body{
 
 
 /**********************Main Sections***********************/
-.container{
+.Kontainer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 1vh;
+    background-blend-mode: multiply;
 
 }
 .content{
@@ -275,6 +454,21 @@ body{
   }
 }
 
+
+
+@media (max-width: 768px){
+
+  .title--article {
+    font-size: 2rem;
+  }
+  .excerpt__image-wrapper img{
+    max-height: 60vh;
+    border-radius: 20px;
+  }
+}
+
+
+
 /**********************Services Section**********************/
 #services{
   background-color: #EDEDEDED;
@@ -315,78 +509,40 @@ body{
 .services-col p{
   text-align: center;
 }
+.video-logo{
+  background-color: #ededed4c;
+  border-radius: 20px;
+}
 
+
+@media screen and (min-width: 1200px)
+{
+  .services-container{
+    max-width: none;
+  }
+
+}
 @media screen and (max-width: 640px)
 {
   .services-display{
     flex-direction: column;
   }
 
+  .video-logo{
+    min-width: 80vw;
+
+  }
 }
-
-/**********************Roof Section**********************/
-#roof{
-    padding-top: 0;
-  }
-  .roof-img{
-    width: 50vw; margin-bottom: -0%;
-  
-  }
-#roof img {
-    vertical-align: middle;
+/**********************Image Modal**********************/
+.modal-content{
+  background-color: #535252;
 }
-  
-  .wrapper1 {
-    position: relative;
-    flex-grow: 1;
-    margin-left: 20%;
-    max-width: 1200px;
-    max-height: 1200px;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-gap: 2vmin;
-    justify-items: center;
-    align-items: center;
-  }
-  
-  
-  .wrapper {
-      position: relative;
-      flex-grow: 1;
-      margin: auto;
-      max-width: 1200px;
-      max-height: 1200px;
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      grid-gap: 2vmin;
-      justify-items: center;
-      align-items: center;
-    }
-    
-     .galleryImg {
-      opacity: .8;
-      z-index: 1;
-      grid-column: span 2;
-      max-width: 100%;
-      margin-bottom: -52%;
-      -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-      transform: scale(1);
-      transition: all 0.25s;
-    }
-    .galleryImg:nth-child(7n+1) {
-      grid-column: 2/span 2;
-    }
-    .galleryImg:hover {
-      z-index: 2;
-      transform: scale(2);
-      opacity: 1;
-    }
-
-
-
-
+.modal-header .btn-close {
+  margin: 0;
+}
+.modal-title{
+  font-size: inherit;
+}
 
 /**********************Contact Section**********************/
 #newcontact{
@@ -396,7 +552,7 @@ background-color: #EDEDEDED;
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 2vh;
-}
+} 
 .contact-wrapper{
     display:flex;
     flex-direction: row;
@@ -447,28 +603,31 @@ textarea{
   }
 
 
+
   .form-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  @media screen and (min-width: 1024px){
+  label{
+    display: unset;
+  }
 
-
-    .form-wrapper{
-      width: 50%;
-    }
-
+  .privacy h5{
+    font-size: 0.83em;
   }
 
 
   @media screen and (min-width: 770px){
+    .form-wrapper{
+      width: 50%;
+    }
     #services-selector{
-      width: 110%;
+      width: 100%;
     }
     .selectdiv{
-      width: 110%;
+      width: 100%;
     }
 
 

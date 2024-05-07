@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /Unpublished Pages*
+
+
+
+Sitemap: http://elamsroofing.com/sitemap.xml

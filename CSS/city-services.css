@@ -480,11 +480,7 @@ body{
   margin: 0 1vw 3vh 1vw;
 }
 
-.card-header-wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+
 .section-subheading{
   margin: 0 0 1rem 0;
   text-align: center;
@@ -523,11 +519,7 @@ body{
   align-self: center;
 
 }
-.photo-btn{
-  padding: 5px 10px!important;
-  font-size: 75%;
-  align-self: center;
-}
+
 
 @media screen and (min-width: 1200px)
 {

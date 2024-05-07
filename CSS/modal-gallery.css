@@ -17,3 +17,15 @@
     max-width: 100%;
     height: auto;
 }
+
+.card-header-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .photo-btn{
+    padding: 5px 10px!important;
+    font-size: 75%;
+    align-self: center;
+  }
